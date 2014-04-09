@@ -8,6 +8,8 @@ gem 'sqlite3'
 
 gem 'devise', '3.2.3'
 gem 'rails_12factor', group: :production
+gem 'omniauth-facebook'
+gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
