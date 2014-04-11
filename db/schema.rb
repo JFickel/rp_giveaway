@@ -17,13 +17,19 @@ ActiveRecord::Schema.define(version: 20140409070210) do
   enable_extension "plpgsql"
 
   create_table "giveaways", force: true do |t|
+    t.integer  "user_id"
+    t.datetime "release_time"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
+    t.string   "name"
     t.string   "email",                  default: "", null: false
+    t.boolean  "admin"
     t.string   "encrypted_password",     default: "", null: false
+    t.string   "provider"
+    t.string   "uid"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -38,10 +44,6 @@ ActiveRecord::Schema.define(version: 20140409070210) do
     t.string   "unconfirmed_email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "provider"
-    t.string   "uid"
-    t.string   "name"
-    t.boolean  "admin"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
