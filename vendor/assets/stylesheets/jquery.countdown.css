@@ -2,6 +2,8 @@
 .is-countdown {
 	border: 1px solid #ccc;
 	background-color: #eee;
+	border-radius: 5px;
+	background-color: #ccc;
 }
 .countdown-rtl {
 	direction: rtl;
@@ -36,14 +38,16 @@
 .countdown-show7 .countdown-section {
 	width: 14%;
 }
+
+/* 3:8 Font Ratio */
 .countdown-section {
 	display: block;
 	float: left;
-	font-size: 75%;
+	font-size: 150%;
 	text-align: center;
 }
 .countdown-amount {
-  font-size: 200%;
+  font-size: 400%;
 }
 .countdown-period {
     display: block;

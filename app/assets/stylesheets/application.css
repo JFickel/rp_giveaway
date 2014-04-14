@@ -10,5 +10,6 @@
  *
  *= require_self
  *= require jquery.countdown.css
+ *= require bootstrap.min
  *= require_tree .
  */
