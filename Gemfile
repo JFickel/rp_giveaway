@@ -2,12 +2,12 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
-
 gem 'devise', '3.2.3'
 gem 'rails_12factor', group: :production
 gem 'omniauth-facebook'
 gem 'pg'
 gem 'rails_admin'
+gem 'gon'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -45,4 +45,4 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]

@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   def self.find_for_facebook_oauth(auth)
     user = where(auth.slice(:provider, :uid))
 
-    if user.first
+    if user = user.first
       return user
     else
       user = User.new(provider: auth.provider,
